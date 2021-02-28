@@ -1,0 +1,159 @@
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+  --nav-width: 324px;
+  
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*===== Colors =====*/
+  --first-color: #cc4b2c;
+  --first-color-dark: #662616;
+  --first-color-darken: #290f09;
+  --text-color: #54423d;
+  --first-color-light: #eae7e6;
+  --first-color-lighten: #fffafa;
+
+  /*===== Font and typography - (rem stands for "root em".) ... However, if you change the <html> font-size in the CSS you will see that everything else changes relative to it — both rem - and em -sized text. =====*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*===== Margins - specifically margin bottoms =====*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /*===== z index https://developer.mozilla.org/en-US/docs/Web/CSS/z-index =====*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*===== BASE 'Reset HTML' - * means "all elements" (a universal selector), so we are setting all elements to have =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, p{
+  margin: 0;
+}
+
+h3{
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*===== CLASS CSS ===== */
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.section-title{
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+}
+
+.section-subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--first-color-darken);
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: .25rem;
+}
+
+/*===== LAYOUT =====*/
+
+
+/*===== NAV =====*/
+
+
+/*=== Show menu ===*/
+
+
+/*Active menu*/
+
+
+/*===== HOME =====*/
+
+
+/*BUTTONS*/
+
+
+/* ===== ABOUT =====*/
+
+
+/* ===== SKILLS =====*/
+
+
+/* ===== EDUCATION =====*/
+
+
+/* ===== SERVICES =====*/
+
+
+/* ===== PROJECT IN MIND  =====*/
+
+
+/* ===== WORKS =====*/
+
+
+/* ===== CONTACT =====*/
+
+
+/* ===== FOOTER =====*/
+
+
+/* ===== MEDIA QUERIES=====*/
