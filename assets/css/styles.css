@@ -64,7 +64,7 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--text-color);
+  background-color: var(--first-color-lighten);
   line-height: 1.6;
 }
 
@@ -115,6 +115,15 @@ img{
 }
 
 /*===== LAYOUT =====*/
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
 
 
 /*===== NAV =====*/
