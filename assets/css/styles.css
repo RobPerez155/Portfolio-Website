@@ -446,8 +446,59 @@ img{
   transform: translate(5px, -4px);
 }
 
-/* ===== SERVICES =====*/
+/* ===== Hobbies =====*/
+.hobbies__container{
+  row-gap: 2rem;
+}
 
+.hobbies__para{
+  row-gap: 2rem;
+  padding: 1.5rem .5rem;
+  text-align: center;
+}
+
+.hobbies__content{
+  padding: 1.5rem .5rem;
+  border: 2px solid var(--first-color);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.hobbies__icon{
+  font-size: 2rem;
+  padding: .5rem;
+  background-color: var(--first-color);
+  color: var(--first-color-lighten);
+  border-radius: 50%;
+  margin-bottom: var(--mb-2);
+}
+
+.hobbies__title{
+  font-size: 1.25rem;
+  color: var(--first-color-dark);
+  margin-bottom: var(--mb-1);
+}
+
+.hobbies__content, .hobbies__icon, .hobbies__description, .hobbies__title{
+  transition: .5s;
+}
+
+.hobbies__content:hover{
+  background-color: var(--first-color);
+}
+
+.hobbies__content:hover .hobbies__icon{
+  background-color: var(--first-color-lighten);
+  color: var(--first-color);
+}
+
+.hobbies__content:hover .hobbies__title{
+  color: var(--first-color-lighten);
+}
+
+.hobbies__content:hover .hobbies__description{
+  color: var(--first-color-lighten);
+}
 
 /* ===== PROJECT IN MIND  =====*/
 
