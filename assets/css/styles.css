@@ -573,9 +573,184 @@ img{
 }
 
 /* ===== CONTACT =====*/
+.contact__container{
+  row-gap: 3rem;
+}
 
+.contact__input{
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color-light);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-2);
+  border-radius: .5rem;
+}
+
+.contact ::placeholder{
+  color: var(--first-color-dark);
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+}
+
+.contact__button{
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+}
+
+.contract__info{
+  margin-bottom: var(--mb-3);
+}
+
+.contact__subtitle{
+  font-size: var(--h3-font-size);
+  color: var(--first-color-dark);
+  margin-bottom: var(--mb-1);
+}
+
+.contact__text{
+  display: block;
+  padding-left: 1rem;
+}
 
 /* ===== FOOTER =====*/
+.footer{
+  background-color: var(--first-color-darken);
+  color: var(--first-color-lighten);
+  text-align: center;
+}
 
+.footer__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.footer__description{
+  margin-bottom: var(--mb-2);
+}
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px){
+  .home__button{
+    width: initial;
+  }
+
+  .nav__menu{
+    width: var(--nav-width);
+  }
+
+  .about__container, .skills__container, .hobbies__container, .works__container, .contact__container, .contact__inputs{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about__data{
+    text-align: initial;
+  }
+
+  .about__description{
+    margin-bottom: var(--mb-5);
+  }
+
+  .about__img{
+    width: 220px;
+  }
+
+  .about__information{
+    padding-left: 4rem;
+  }
+
+  .education__time{
+    padding: 0 2rem;
+  }
+
+  .role{
+    background: none;
+  }
+
+  .role__container{
+    background-color: var(--first-color);
+    grid-template-columns: 2fr 1.2fr;
+    padding: 0 2rem;
+    border-radius: .5rem;
+  }
+
+  .role__data{
+    padding: 3rem 0;
+  }
+
+  .role__title, .role__data{
+    text-align: initial;
+  }
+
+  .role__img{
+    width: 230px;
+    align-self: flex-end;
+  }
+
+  .contact__inputs{
+    display: grid;
+    column-gap: 1.5rem;
+  }
+
+  .contract__info{
+    padding-left: 3rem;
+  }
+
+  .footer{
+    background: none;
+  }
+
+  .footer__container{
+    background-color: var(--first-color-darken);
+    padding: 3rem 0;
+    border-radius: .5rem;
+  }
+
+  .footer__anchor{
+      font-size: 1rem;
+      color: var(--first-color-lighten);
+      font-weight: var(--font-bold);
+      transition: .3s;
+  }
+
+  @media screen and (min-width: 1440px) {
+    body{
+      margin: 0;
+      padding-left: var(--nav-width);
+    }
+    
+    .l-header{
+     width: 0; 
+    }
+
+    .nav__toggle, .nav__logo, .nav__close{
+      display: none;
+    }
+
+    .nav__menu{
+      left: 0;
+    }
+
+    .home__container{
+      height: 100vh;
+    }
+
+    .section{
+      padding: 3rem 0 2rem;
+    }
+
+    .bd-grid{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services__container{
+      grid-template-columns: repeat(3,1fr);
+    }
+
+  }
+}
