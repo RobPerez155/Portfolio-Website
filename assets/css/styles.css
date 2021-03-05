@@ -12,12 +12,12 @@
   --font-bold: 700;
 
   /*===== Colors =====*/
-  --first-color: #cc4b2c;
-  --first-color-dark: #662616;
-  --first-color-darken: #290f09;
-  --text-color: #54423d;
-  --first-color-light: #eae7e6;
-  --first-color-lighten: #fffafa;
+  --first-color: #2d5d77;
+  --first-color-dark: #bf2604;
+  --first-color-darken: #184059;
+  --text-color: #f5aa6c;
+  --first-color-light: #d7d7d9;
+  --first-color-lighten: #ffffff;
 
   /*===== Font and typography - (rem stands for "root em".) ... However, if you change the <html> font-size in the CSS you will see that everything else changes relative to it — both rem - and em -sized text. =====*/
   --body-font: 'Poppins', sans-serif;
@@ -131,7 +131,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color-lighten);
+  background-color: var(--first-color);
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 /*===== NAV =====*/
@@ -140,6 +140,10 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__logo{
+  color: var(--first-color-lighten);
 }
 
 .nav__menu{
@@ -183,7 +187,7 @@ img{
 }
 
 .nav__toggle{
-  color: var(--first-color-dark);
+  color: var(--first-color-lighten);
   font-size: 1.3rem;
   cursor: pointer;
 }
