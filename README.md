@@ -1,2 +1,2 @@
 # Portfolio-Website
-This is a portfolio website built with HTML, CSS, and Javascript
+This is a portfolio website built with HTML, CSS, and Javascript. It does not have a backend wired up but in the future I will be implementing a node back end. Additionally, this portfolio was adapted from this tutorial by Harris Willian.
