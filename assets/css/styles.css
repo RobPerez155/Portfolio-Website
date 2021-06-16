@@ -250,7 +250,7 @@ img{
   display: inline-flex;
   background-color: var(--first-color);
   color: var(--first-color-lighten);
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   border-radius: 50%;
   padding: .40rem;
   margin: 0 var(--mb-1);
@@ -375,23 +375,27 @@ img{
 }
 
 .skills__js{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__react{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__ruby{
-  width: 40%;
+  width: 30%;
 }
 
 .skills__node{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__rails{
-  width: 40%;
+  width: 30%;
+}
+
+.skills__csharp{
+  width: 10%;
 }
 
 /* ===== EDUCATION =====*/
