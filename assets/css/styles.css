@@ -125,6 +125,10 @@ img{
   margin-right: var(--mb-2);
 }
 
+.center{
+  text-align: center;
+}
+
 .l-header{
   width: 100%;
   position: fixed;
@@ -653,8 +657,12 @@ img{
     width: var(--nav-width);
   }
 
-  .about__container, .skills__container, .hobbies__container, .works__container, .contact__container, .contact__inputs{
+  .about__container, .skills__container, .contact__container, .contact__inputs{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .hobbies__container, .works__container{
+    grid-template-columns: repeat(1,1fr);
   }
 
   .about__data{
@@ -760,6 +768,8 @@ img{
     .bd-grid{
       margin-left: auto;
       margin-right: auto;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     .services__container{
